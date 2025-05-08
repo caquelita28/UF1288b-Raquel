@@ -1,0 +1,63 @@
+Recuperación UF1288: Desarrollo de Componentes Software para Servicios de Comunicaciones
+Parte 1: Teoría (4 puntos)
+
+1.- Explica las diferencias entre el protocolo TCP y el protocolo UDP. ¿Cuándo elegirías uno sobre el otro?
+Son dos protocolos de red que se utilizan para transmitir datos a través de la red, pero difieren significativamente en su enfoque.
+Diferencias clave:
+
+*Conexión
+tcp: Orientado a la conexión, establece una conexión entre emisor y receptor antes de la transmisión
+udp:Sin conexión, no requiere establecimiento de conexión previa
+*Fiabilidad
+tcp:Fiable, garantiza la entrega ordenada y sin errores de los datos
+udp:No fiable, puede perder o duplicar paquetes
+*Control de flujo
+tcp:Sí, controla el flujo de datos para evitar sobrecarga
+udp:No, no controla el flujo de datos
+*Velocidad
+tcp:Más lento debido al control de flujo y la verificación de errores
+udp:Más rápido, sin el overhead de control de flujo
+*Uso típico
+tcp:Transmisión de datos donde la fiabilidad es crucial (e.g., correo electrónico, transferencia de archivos)
+udp:Transmisión de datos donde la velocidad es más importante que la fiabilidad (e.g., streaming de video, juegos en línea)
+
+
+Cuándo elegir uno sobre el otro:
+TCP:
+Cuando la integridad de los datos es esencial y la pérdida de datos es inaceptable.
+Cuando la orden de los datos es importante.
+Cuando se necesita verificar la recepción de los datos.
+UDP:
+Cuando la velocidad es más importante que la fiabilidad.
+Cuando la pérdida ocasional de datos es aceptable.
+Cuando se necesitan transmisiones en tiempo real. 
+
+
+2.- Describe brevemente el modelo cliente-servidor y su importancia en el desarrollo de servicios de comunicaciones.
+El modelo cliente-servidor es una arquitectura de red donde un servidor proporciona servicios a clientes que los solicitan. Este modelo es crucial para las comunicaciones de red, ya que permite una gestión centralizada de recursos y facilita la interacción entre diferentes dispositivos.
+Este modelo es importante en el desarrolla que el  servidor alberga los recursos comunes, como bases de datos, aplicaciones y archivos, lo que facilita su gestión y acceso por parte de múltiples clientes. 
+
+
+3.- ¿Cuál es la diferencia entre una petición HTTP de tipo GET y una de tipo POST? Proporciona un caso de uso para cada una.
+La principal diferencia entre una petición HTTP GET y POST radica en su uso: GET se usa para recuperar datos del servidor, mientras que POST se usa para enviar datos al servidor para su procesamiento. Una solicitud GET incluye datos en la URL, mientras que POST los envía en el cuerpo de la solicitud. 
+Casos de uso:
+GET:
+Recuperar información de una base de datos (por ejemplo, obtener detalles de un producto).
+Filtrar o ordenar resultados de una búsqueda.
+Cargar una página web.
+Acceder a un recurso estático (imagen, archivo CSS, etc.).
+POST:
+Enviar datos de un formulario (por ejemplo, crear una cuenta, enviar un mensaje).
+Subir un archivo al servidor.
+Realizar una acción que modifica el estado del servidor (por ejemplo, crear una orden de compra).
+Enviar datos de un evento (por ejemplo, un clic en un botón).
+
+
+4.-¿Qué es una API y por qué es fundamental en el desarrollo de software para comunicaciones?
+Una API, o Application Programming Interface, es como una interfaz que permite a diferentes aplicaciones comunicarse y compartir datos. En lugar de desarrollar todas las funcionalidades de comunicación desde cero, los desarrolladores pueden aprovechar las APIs de proveedores como Vonage o Twilio para agregar llamadas de voz, mensajes de texto y otras funciones de comunicación a sus aplicaciones. 
+Y si es fundamental en el desarrollo de software para comunicaciones ya que nos permite :
+Integración de funcionalidades de comunicación.
+Ahorro de tiempo y recursos.
+Mayor flexibilidad.
+Creación de experiencias de comunicación más personalizadas.
+Escalabilidad.
